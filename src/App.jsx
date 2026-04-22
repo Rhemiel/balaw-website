@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Home from './pages/Home';
-import Terminology from './pages/Terminology';
-import Acknowledgement from './pages/Acknowledgement';
-import Documentation from './pages/Documentation';
-import Binote from './pages/Binote';
+import Home from './Pages/Home';
+import Terminology from './Pages/Terminology';
+import Acknowledgement from './Pages/Acknowledgement';
+import Documentation from './Pages/Documentation';
+import Binote from './Pages/Binote';
 import './styles/global.css';
 
 function App() {
