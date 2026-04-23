@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Import Images
+// Import Images kagamitan
 import bangkaImg from '../assets/termpic/KAGAMITAN_BANGKA.jpg';
 import batingalImg from '../assets/termpic/KAGAMITAN_BATINGAL.jpg';
 import bayongImg from '../assets/termpic/KAGAMITAN_BAYONG.jpg';
@@ -11,6 +11,8 @@ import kapingImg from '../assets/termpic/KAGAMITAN_KAPING.jpg';
 import kawilImg from '../assets/termpic/KAGAMITAN_KAWIL.jpg';
 import lambatImg from '../assets/termpic/KAGAMITAN_LAMBAT.jpg';
 import lubidImg from '../assets/termpic/KAGAMITAN_LUBID.jpg';
+import lusongImg from '../assets/termpic/KAGAMITAN_LUSONG.jpg';
+import makarinaImg from '../assets/termpic/KAGAMITAN_MAKARINA.jpg';
 import netImg from '../assets/termpic/KAGAMITAN_NET.jpg';
 import pamuntotImg from '../assets/termpic/KAGAMITAN_PAMUNTOT.jpg';
 import plastikImg from '../assets/termpic/KAGAMITAN_PLASTIK.jpg';
@@ -19,7 +21,7 @@ import styroImg from '../assets/termpic/KAGAMITAN_STYROFOAM.jpg';
 import taktakanImg from '../assets/termpic/KAGAMITAN_TAKTAKAN.jpg';
 import tiklisImg from '../assets/termpic/KAGAMITAN_TIKLIS.jpg';
 
-// Import audio
+// Import audio kagamitan
 import bangka from '../assets/RECORD/KAGAMITAN/BANGKA_KAGAMITAN.m4a';
 import batingal from '../assets/RECORD/KAGAMITAN/BATINGAL_KAGAMITAN.m4a';
 import bayong from '../assets/RECORD/KAGAMITAN/BAYONG_KAGAMITAN.m4a';
@@ -40,38 +42,41 @@ import estyrofoam from '../assets/RECORD/KAGAMITAN/ESTYROFOAM_KAGAMITAN.m4a';
 import taktakan from '../assets/RECORD/KAGAMITAN/TAKTAKAN_KAGAMITAN.m4a';
 import tiklis from '../assets/RECORD/KAGAMITAN/TIKLIS_KAGAMITAN.m4a';
 
-
-
-
-
-
-
 function Terminology() {
   
   // --- DATA ARRAYS ---
   const kagamitanData = [
-    { term: "Bangka Bang-ká (mabilis, pangngalan)", audio: bangka , definition: "Sinasakyan ng mga manlalaot na gawa sa kahoy papunta sa gitna ng dagat upang makahuli.", image: bangkaImg },
+    { term: "Bangka Bang-ká (mabilis, pangngalan)", audio: bangka, definition: "Sinasakyan ng mga manlalaot na gawa sa kahoy papunta sa gitna ng dagat upang makahuli.", image: bangkaImg },
     { term: "Batingal Ba-ti-ngál (mabilis, pangngalan)", audio: batingal, definition: "Isang uri ng lambat na may maliliit na butas na ginagamit sa paghuli ng balaw.", image: batingalImg },
     { term: "Bayong Ba-yóng ( mabilis, pangngalan)", audio: bayong, definition: "Tumutukoy sa lalagyan na ginagamit sa pag-iipon ng mga nahuling balaw upang mapanatiling maayos at malinis ito.", image: bayongImg },
     { term: "Board bóard ( mabilis, pangngalan )", audio: board, definition: "Isang uri ng kagamitang panghuli sa dagat na gawa sa tabla o bakal; karaniwang ikinakabit ito sa magkabilang dulo ng lambat.", image: boardImg },
     { term: "Halo Ha-lò ( malumay, pangngalan)", audio: halo, definition: "Isang mahabang kahoy na ginagamit na pandukdok o pangbayo sa binilad na balaw.", image: haloImg },
-    { term: "Hulmahan Hul-ma-hán (pangngalan)", audio: hulma, definition: "Tawag sa lalagyan o kasangkapan na ginagamit sa paghuhulma tulad ng pagbuo ng balaw sa nais nitong anyo o hugis.", image: hulmaImg }
-
+    { term: "Hulmahan Hul-ma-hán (pangngalan)", audio: hulma, definition: "Tawag sa lalagyan o kasangkapan na ginagamit sa paghuhulma tulad ng pagbuo ng balaw sa nais nitong anyo o hugis.", image: hulmaImg },
+    { term: "Kaping Kà -ping (pangngalan)", audio: kaping, definition: "Isang kagamitan na ginagamit sa pagpapatuyo o pagbibilad ng mga balaw. Ito ay karaniwang tinatawag ding screen.", image: kapingImg },
+    { term: "Kawil Ka-wíl (pangngalan)", audio: kawil, definition: "Isang kagamitan na ginagamit sa paghuli ng lamang-dagat, na nilalagyan ng pain upang makahuli.", image: kawilImg },
+    { term: "Lambat Lam-bát (pangngalan)", audio: lambat, definition: "Isang kagamitang ginagamit sa paghuli ng iba’t ibang uri ng lamang-dagat.", image: lambatImg },
+    { term: "Lubid Lù-bid (pangngalan)", audio: lubid, definition: "Ginagamit sa paghila ng lambat upang maiahon ang mga nahuling lamang-dagat.", image: lubidImg },
+    { term: "Lusong Lù-song (pangngalan)", audio: lusong, definition: "Tumutukoy sa lagayan ng balaw upang mabayo ang pinatuyong balaw.", image: lusongImg },
+    { term: "Makarina Ma-ka-ri-ná (pangngalan)", audio: makarina, definition: "Isang kagamitan na lapad, kung saan ang mga balaw ay inilalagay upang maiwagwag o maalis ang mga dumi.", image: makarinaImg },
+    { term: "Net Nét (pangngalan)", audio: net, definition: "Isang bahagi ng kaping o screen na ginagamit sa pagpapatuyo o pagbibilad ng mga balaw.", image: netImg },
+    { term: "Pamuntot Pa-mun-tót (pangngalan)", audio: pamuntot, definition: "Ito ay bahagi ng lambat kung saan ikinakabit sa dulo ng lambat para lumubog ito at hindi lumutang sa tubig.", image: pamuntotImg },
+    { term: "Plastik Plas-tík (pangngalan)", audio: plastik, definition: "Nagsisilbing lagayan na ginagamit sa pagbebenta ng balaw.", image: plastikImg },
+    { term: "Sako Sà-ko (pangngalan)", audio: sako, definition: "Lalagyan ng balaw upang maiawas ang asin para di mabulok ang balaw.", image: sakoImg },
+    { term: "Styrofoam Es-tay-ro-fóm (pangngalan)", audio: estyrofoam, definition: "Lalagyan o imbakan ng mga balaw.", image: styroImg },
+    { term: "Taktakan Tak-ta-kán (pangngalan)", audio: taktakan, definition: "Nagsisilbing lalagyan o imbakan ng mga balaw na nahuli.", image: taktakanImg },
+    { term: "Tiklis Tik-lís (pangngalan)", audio: tiklis, definition: "Lalagyan na ginagamit sa pag-iimbak o paglalagay ng balaw.", image: tiklisImg }
   ];
 
   const prosesoTableData = [
     { term: "Pag-aariya", speech: "Pag-aariya", definition: "Terminolohiya para sa paglalatag ng lambat.", image: null },
-    // Add more specific process terms here
   ];
 
   const sangkapData = [
     { term: "Asin", speech: "Asin", definition: "Ginagamit upang mapanatiling sariwa ang balaw.", image: null },
-    // Add more ingredients here
   ];
 
   const ibaPangData = [
     { term: "Makarina", speech: "Makarina", definition: "Proseso ng paglilinis ng mga nahuling balaw.", image: null },
-    // Add more terms here
   ];
 
   // --- LOGIC ---
@@ -79,8 +84,6 @@ function Terminology() {
     if (audioFile) {
       const audio = new Audio(audioFile);
       audio.play().catch(error => console.error("Error playing audio:", error));
-    } else {
-      console.warn("No audio file provided for this term.");
     }
   };
 
@@ -104,7 +107,7 @@ function Terminology() {
               </td>
               <td style={styles.imageCell}>
                 {item.image ? (
-                  <img src={item.image} alt={item.speech} style={styles.termImg} />
+                  <img src={item.image} alt={item.term} style={styles.termImg} />
                 ) : (
                   <div style={styles.noImg}>Walang Larawan</div>
                 )}
@@ -119,7 +122,6 @@ function Terminology() {
 
   return (
     <div style={styles.mainWrapper}>
-      {/* SECTION 1: PROSESO DESCRIPTION */}
       <section style={{ ...styles.section, backgroundColor: '#3d0101' }}>
         <h1 style={styles.titleLarge}>PROSESO NG PAGBABALAW</h1>
         <p style={styles.descriptionText}>
@@ -127,7 +129,6 @@ function Terminology() {
         </p>
       </section>
 
-      {/* SECTION 2: MGA HAKBANG LIST */}
       <section style={{ ...styles.section, backgroundColor: '#5c0808' }}>
         <h2 style={styles.subtitle}>Mga Hakbang sa Proseso ng Pagbabalaw</h2>
         <ol style={styles.processList}>
@@ -147,26 +148,22 @@ function Terminology() {
         </ol>
       </section>
 
-      {/* SECTION 3: KAGAMITAN */}
       <section style={{ ...styles.section, backgroundColor: '#7a1111' }}>
         <h1 style={styles.titleLarge}>SALITA O TERMINOLOHIYA</h1>
         <h3 style={styles.categoryLabel}>KAGAMITAN</h3>
         <TerminologyTable data={kagamitanData} />
       </section>
 
-      {/* SECTION 4: PROSESO */}
       <section style={{ ...styles.section, backgroundColor: '#9c1a1a' }}>
         <h3 style={styles.categoryLabel}>PROSESO</h3>
         <TerminologyTable data={prosesoTableData} />
       </section>
 
-      {/* SECTION 5: SANGKAP */}
       <section style={{ ...styles.section, backgroundColor: '#3d0101' }}>
         <h3 style={styles.categoryLabel}>SANGKAP</h3>
         <TerminologyTable data={sangkapData} />
       </section>
 
-      {/* SECTION 6: IBA PANG TERMINOLOHIYA */}
       <section style={{ ...styles.section, backgroundColor: '#5c0808' }}>
         <h3 style={styles.categoryLabel}>IBA PANG TERMINOLOHIYA</h3>
         <TerminologyTable data={ibaPangData} />
@@ -175,47 +172,50 @@ function Terminology() {
   );
 }
 
-// --- CSS IN JS OBJECT ---
+// --- UPDATED CSS IN JS OBJECT ---
 const styles = {
   mainWrapper: {
     color: 'white',
     fontFamily: 'Arial, sans-serif',
     width: '100%',
+    overflowX: 'hidden', // Prevents body scroll
   },
   section: {
-    padding: '80px 10%',
+    padding: 'clamp(40px, 10vw, 80px) 5%', // Reduced side padding for mobile
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    boxSizing: 'border-box',
   },
   titleLarge: {
-    fontSize: '2.5rem',
+    fontSize: 'clamp(1.5rem, 6vw, 2.5rem)', // Fluid typography
     textAlign: 'center',
     marginBottom: '20px',
     letterSpacing: '2px',
     fontWeight: 'bold',
   },
   subtitle: {
-    fontSize: '2rem',
+    fontSize: 'clamp(1.2rem, 5vw, 2rem)',
     marginBottom: '30px',
     borderLeft: '5px solid white',
     paddingLeft: '15px',
     alignSelf: 'flex-start',
   },
   descriptionText: {
-    fontSize: '1.2rem',
+    fontSize: 'clamp(1rem, 3vw, 1.2rem)',
     lineHeight: '1.8',
     textAlign: 'center',
     maxWidth: '900px',
   },
   processList: {
-    fontSize: '1.1rem',
+    fontSize: 'clamp(0.9rem, 2.5vw, 1.1rem)',
     lineHeight: '2.2',
     backgroundColor: 'rgba(255, 255, 255, 0.1)',
-    padding: '30px 50px',
+    padding: 'clamp(15px, 5vw, 30px) clamp(20px, 8vw, 50px)',
     borderRadius: '10px',
     width: '100%',
     maxWidth: '800px',
+    boxSizing: 'border-box',
   },
   categoryLabel: {
     backgroundColor: 'white',
@@ -225,17 +225,19 @@ const styles = {
     borderRadius: '50px',
     fontWeight: 'bold',
     marginBottom: '30px',
-    fontSize: '1.2rem',
+    fontSize: 'clamp(0.9rem, 3vw, 1.2rem)',
   },
   tableContainer: {
     backgroundColor: 'white',
     borderRadius: '12px',
-    overflow: 'hidden',
+    overflowX: 'auto', // CRITICAL: Allows table to be swiped on mobile
     width: '100%',
     boxShadow: '0 10px 30px rgba(0,0,0,0.5)',
+    WebkitOverflowScrolling: 'touch', // Smooth scrolling on iOS
   },
   table: {
     width: '100%',
+    minWidth: '700px', // Forces the desktop view layout even on small screens
     borderCollapse: 'collapse',
     color: '#333',
   },

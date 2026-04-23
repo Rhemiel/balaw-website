@@ -35,7 +35,8 @@ function Footer() {
           }
 
           .footer-logo {
-            width: 450px;
+            width: 100%;
+            max-width: 450px;
             height: auto;
             display: block;
           }
@@ -90,13 +91,35 @@ function Footer() {
 
           /* Responsive Layout */
           @media (max-width: 900px) {
+            .main-footer {
+              padding: 3rem 1rem;
+            }
+
             .footer-container {
               grid-template-columns: 1fr;
-              text-align: left;
+              /* Center all content in the grid */
+              justify-items: center; 
+              text-align: center;
+              gap: 60px;
             }
             
             .footer-logo {
-              margin-bottom: 20px;
+              margin: 0 auto 20px auto; /* Centers logo image */
+              max-width: 320px; /* Sized for better mobile fit */
+            }
+
+            .footer-branding h2 {
+              font-size: 1.5rem;
+            }
+
+            .footer-nav {
+              align-items: center; /* Centers links vertically */
+            }
+            
+            .contact-group {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
             }
           }
         `}
@@ -110,7 +133,7 @@ function Footer() {
             <h2>Camarines Norte State College</h2>
             <p className="location-subtext">Camarines Norte, Region V, Philippines</p>
             <img 
-              src= {bwlogo} 
+              src={bwlogo} 
               alt="Balawika Logo" 
               className="footer-logo" 
             />

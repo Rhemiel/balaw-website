@@ -1,6 +1,7 @@
 import React from 'react';
 import prec from '../assets/MANANALIKSIK_PRECIOUS.png';
 import lea from '../assets/MANANALIKSIK_LEA.png';
+import roz from '../assets/ROZEL A. GENOVA, PhD.png'
 
 const MananaliksikPage = () => {
   // A palette of maroon shades to create the "layered" effect
@@ -28,10 +29,10 @@ const MananaliksikPage = () => {
     },
     {
       roleTitle: null,
-      name: 'Pangalan ng Tagapayo',
+      name: 'ROZEL A. GENOVA, PhD',
       role: 'Tagapayo',
-      description: 'Si Lea B. Venida ay nagtapos ng Elementarya sa Batobalani Elementary School at Sekondarya naman sa Jose Panganiban National High School. Siya ay kasalukuyang nag-aaral sa Camarines Norte State College - Abaño Campus sa ilalim ng kursong Bachelor of Secondary Education Major in Filipino. Pinapayabong at hinahasa pa niya ang kaniyang kaalaman at kakayahan sa asignaturang Filipino.',
-      image: 'https://via.placeholder.com/200'
+      description: 'Siya ay nagtapos ng Master of Arts in Education Major in Filipino sa The National Teachers College, Manila taong 2018. Nagtapos ng Doctor of Philosophy Major in Filipino sa Bicol University, Legazpi City sa taong 2024 . Siya rin ay dumalo sa iba’t ibang lokal at Panitikan. Miyembro rin siya ng Samahan ng mga Guro sa Intelektuwalisasyon ng Filipino (SAGIF).',
+      image: roz
     }
   ];
 

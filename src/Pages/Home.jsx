@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import firstPic from '../assets/firstpic.png';
+import backshot from '../assets/backshot.png'
 
 // Local assets for the Camarines Norte Carousel
 import camNorte1 from '../assets/camnorte1.png'; 
@@ -9,7 +10,7 @@ import camNorte3 from '../assets/camnorte3.jpg';
 import Vinzons from '../assets/vinzonsm.jpg';
 import Sabang from '../assets/sabang.png'
 import Sula from '../assets/sula.png'
-import Proses from '../assets/PROSES.jpg';
+import Proses from '../assets/pagbabalaw.png';
 
 const norteImages = [camNorte1, camNorte2, camNorte3];
 
@@ -44,7 +45,7 @@ function Home() {
           justify-content: center;
           align-items: center;
           text-align: center;
-          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(${firstPic});
+          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(${backshot});
           background-size: cover;
           background-position: center;
           background-attachment: fixed;
@@ -56,6 +57,11 @@ function Home() {
           letter-spacing: 15px;
           text-transform: uppercase;
           margin: 0;
+        }
+
+        .hero-subtitle {
+          font-size: clamp(1rem, 4vw, 1.8rem);
+          margin-top: 10px;
         }
 
         /* INTRO */
@@ -70,7 +76,7 @@ function Home() {
           font-size: 1.2rem;
           line-height: 2;
           max-width: 1000px;
-          margin: 0 auto;
+          margin: 0 auto 1.5rem auto;
           text-align: justify;
           opacity: 0.95;
         }
@@ -115,12 +121,11 @@ function Home() {
           max-width: 1400px; 
           width: 100%;
           display: grid;
-          grid-template-columns: 1fr 1fr; /* Balanced 50/50 split */
+          grid-template-columns: 1fr 1fr;
           gap: 60px;
-          align-items: center; /* Vertical center */
+          align-items: center;
         }
 
-        /* Alternation Logic */
         .row-container.img-right { grid-template-areas: "text img"; }
         .row-container.img-left { grid-template-areas: "img text"; }
 
@@ -156,6 +161,7 @@ function Home() {
           line-height: 1.8;
           text-align: justify;
           opacity: 0.9;
+          margin-bottom: 1.2rem;
         }
 
         .carousel-dots {
@@ -176,10 +182,55 @@ function Home() {
         
         .dot.active { background: #ffcc00; width: 30px; border-radius: 6px; }
 
-        @media (max-width: 1000px) {
-          .row-container { grid-template-columns: 1fr; grid-template-areas: "img" "text"; }
-          .row-container.img-right { grid-template-areas: "img" "text"; }
-          .content-row { padding: 4rem 5%; }
+        /* --- MOBILE OPTIMIZATIONS --- */
+        @media (max-width: 1024px) {
+          .row-container { 
+            gap: 40px; 
+          }
+          .content-row {
+            padding: 6rem 5%;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .hero-title {
+            letter-spacing: 8px; /* Reduce spacing so text doesn't wrap awkwardly */
+          }
+
+          .intro-bridge {
+            padding: 4rem 8%;
+          }
+
+          .stacked-section {
+            padding: 4rem 5%;
+          }
+
+          .row-container { 
+            grid-template-columns: 1fr; 
+            grid-template-areas: "img" "text" !important; /* Forces Image on top of Text */
+            gap: 30px;
+          }
+
+          .content-row { 
+            padding: 4rem 6%; 
+          }
+
+          .row-text h2, .stacked-container h2 {
+            text-align: center;
+          }
+
+          .row-text p, .stacked-container p, .intro-content p {
+            text-align: left; /* Justified text looks messy with short line widths on mobile */
+            font-size: 1rem;
+          }
+
+          .stacked-image-box {
+            aspect-ratio: 4 / 3; /* Better for mobile viewing */
+          }
+          
+          .hero-section {
+            background-attachment: scroll; /* Fixed backgrounds can cause lag on mobile browsers */
+          }
         }
       `}</style>
 
@@ -204,7 +255,7 @@ function Home() {
           </div>
         </section>
 
-        {/* SECTION 1: CAMARINES NORTE (Stacked: Title -> Image -> Text) */}
+        {/* SECTION 1: CAMARINES NORTE */}
         <section className="stacked-section">
           <div className="stacked-container">
             <h2>Camarines Norte</h2>
@@ -230,7 +281,7 @@ function Home() {
           </div>
         </section>
 
-        {/* SECTION 2: VINZONS (Image Right) */}
+        {/* SECTION 2: VINZONS */}
         <div className="content-row row-2">
           <div className="row-container img-right">
             <div className="row-image-box">
@@ -253,7 +304,7 @@ function Home() {
           </div>
         </div>
 
-        {/* SECTION 3: SABANG (Image Left) */}
+        {/* SECTION 3: SABANG */}
         <div className="content-row row-3">
           <div className="row-container img-left">
             <div className="row-image-box">
@@ -272,7 +323,7 @@ function Home() {
           </div>
         </div>
 
-        {/* SECTION 4: SULA (Image Right) */}
+        {/* SECTION 4: SULA */}
         <div className="content-row row-4">
           <div className="row-container img-right">
             <div className="row-image-box">
@@ -291,7 +342,7 @@ function Home() {
           </div>
         </div>
 
-        {/* SECTION 5: PROSESO (Image Left) */}
+        {/* SECTION 5: PROSESO */}
         <div className="content-row row-5">
           <div className="row-container img-left">
             <div className="row-image-box">
