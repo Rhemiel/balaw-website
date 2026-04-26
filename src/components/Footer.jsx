@@ -145,9 +145,9 @@ function Footer() {
             <nav className="footer-nav">
               <a href="/">Home</a>
               <a href="/salita">Salita o Terminolohiya</a>
-              <a href="/acknowledgement">Acknowledgement</a>
-              <a href="/documentation">Documentation</a>
-              <a href="/binote">Binote</a>
+              <a href="/acknowledgement">Pagkilala</a>
+              <a href="/documentation">Dokumentasyon</a>
+              <a href="/binote">Mananaliksik</a>
             </nav>
           </div>
 
@@ -157,14 +157,14 @@ function Footer() {
             
             <div className="contact-group">
               <p className="contact-label">PRECIOUS B. BELESTA</p>
-              <p className="contact-label">Researcher 1</p>
+              <p className="contact-label">Mananaliksik 1</p>
               <p className="contact-detail">preciousbelesta@gmail.com</p>
               <p className="contact-detail">09923727018</p>
             </div>
 
             <div className="contact-group">
               <p className="contact-label">LEA B. VENIDA</p>
-              <p className="contact-label">Researcher 2</p>
+              <p className="contact-label">Mananliksik 2</p>
               <p className="contact-detail">venidalea@gmail.com</p>
               <p className="contact-detail">09468510645</p>
             </div>

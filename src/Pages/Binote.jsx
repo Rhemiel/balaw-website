@@ -18,10 +18,10 @@ const MananaliksikPage = () => {
       name: 'PRECIOUS B. BELESTA',
       role: 'Mananaliksik',
       description: 'Si Precious B. Belesta ay nagtapos sa Anita V. Romero Elementary School at sekondarya naman sa Camarines Norte National High School. Siya ay kasalukuyang nag-aaral sa Camarines Norte State College - Abaño Campus sa ilalim ng kursong Bachelor of Secondary Education Major in Filipino. Kaniyang pinalalawak at pinalalago ang kaalaman sa pananaliksik at asignaturang Filipino.',
-      image: prec // Replace with actual image path
+      image: prec 
     },
     {
-      roleTitle: null, // Only the first section has the main header
+      roleTitle: null, 
       name: 'LEA B. VENIDA',
       role: 'Mananaliksik',
       description: 'Si Lea B. Venida ay nagtapos ng Elementarya sa Batobalani Elementary School at Sekondarya naman sa Jose Panganiban National High School. Siya ay kasalukuyang nag-aaral sa Camarines Norte State College - Abaño Campus sa ilalim ng kursong Bachelor of Secondary Education Major in Filipino. Pinapayabong at hinahasa pa niya ang kaniyang kaalaman at kakayahan sa asignaturang Filipino.',
@@ -120,7 +120,7 @@ const styles = {
   roleTagline: {
     fontSize: '1.2rem',
     fontStyle: 'italic',
-    color: '#ffcccb', // Light pinkish-red for contrast
+    color: '#ffcccb', 
     marginBottom: '20px',
     fontWeight: '400',
   },
@@ -130,6 +130,9 @@ const styles = {
     maxWidth: '600px',
     margin: '0 auto',
     opacity: '0.9',
+    // Added styles below
+    textAlign: 'justify',
+    textIndent: '50px',
   },
 };
 

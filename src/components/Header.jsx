@@ -190,7 +190,7 @@ function Header() {
           <nav className="nav-links">
             <NavLink to="/" end onClick={() => setIsMenuOpen(false)}>Home</NavLink>
             <NavLink to="/terminology" onClick={() => setIsMenuOpen(false)}>Salita o Terminolohiya</NavLink>
-            <NavLink to="/acknowledgement" onClick={() => setIsMenuOpen(false)}>Pakilala</NavLink>
+            <NavLink to="/acknowledgement" onClick={() => setIsMenuOpen(false)}>Pagkilala</NavLink>
             <NavLink to="/documentation" onClick={() => setIsMenuOpen(false)}>Dokumentasyon</NavLink>
             <NavLink to="/binote" onClick={() => setIsMenuOpen(false)}>Mananaliksik</NavLink>
           </nav>

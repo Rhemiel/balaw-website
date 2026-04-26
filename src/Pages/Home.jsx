@@ -79,6 +79,7 @@ function Home() {
           margin: 0 auto 1.5rem auto;
           text-align: justify;
           opacity: 0.95;
+          text-indent: 50px; /* Added Indentation */
         }
 
         /* SECTION 1: UNIQUE STACKED LAYOUT */
@@ -162,6 +163,7 @@ function Home() {
           text-align: justify;
           opacity: 0.9;
           margin-bottom: 1.2rem;
+          text-indent: 50px; /* Added Indentation */
         }
 
         .carousel-dots {
@@ -194,7 +196,7 @@ function Home() {
 
         @media (max-width: 768px) {
           .hero-title {
-            letter-spacing: 8px; /* Reduce spacing so text doesn't wrap awkwardly */
+            letter-spacing: 8px;
           }
 
           .intro-bridge {
@@ -207,7 +209,7 @@ function Home() {
 
           .row-container { 
             grid-template-columns: 1fr; 
-            grid-template-areas: "img" "text" !important; /* Forces Image on top of Text */
+            grid-template-areas: "img" "text" !important;
             gap: 30px;
           }
 
@@ -219,17 +221,19 @@ function Home() {
             text-align: center;
           }
 
+          /* Updated for Mobile: Indented and Justified */
           .row-text p, .stacked-container p, .intro-content p {
-            text-align: left; /* Justified text looks messy with short line widths on mobile */
+            text-align: justify; 
+            text-indent: 40px;
             font-size: 1rem;
           }
 
           .stacked-image-box {
-            aspect-ratio: 4 / 3; /* Better for mobile viewing */
+            aspect-ratio: 4 / 3;
           }
           
           .hero-section {
-            background-attachment: scroll; /* Fixed backgrounds can cause lag on mobile browsers */
+            background-attachment: scroll;
           }
         }
       `}</style>
@@ -246,7 +250,7 @@ function Home() {
         {/* INTRO */}
         <section className="intro-bridge">
           <div className="intro-content">
-            <p className='text-justify'>
+            <p>
               Ang website na ito ay nilikha upang magbigay ng malinaw at organisado, na mapagkukunan ng impormasyon tungkol sa balaw, isang mahalagang bahagi ng kultura at tradisyon sa ilang lugar sa Bicol, partikular sa bayan ng Vinzons, Camarines Norte sa. Layunin nito na ipakita at ipaliwanag ang iba’t ibang terminolohiyang ginagamit magmula sa panghuhuli hanggang sa paggawa ng balaw, kasama ang kanilang kahulugan upang mas madaling maunawaan ng mga mag-aaral, mananaliksik at mambabasa ang mga salitang ginagamit sa larangan na ito. Sa pamamagitan nito, mas nagiging malinaw ang bawat hakbang at bahagi ng tradisyong ito.
             </p>
             <p>
