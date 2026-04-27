@@ -1,7 +1,7 @@
 import React from 'react';
 
 // --- IMAGE IMPORTS (Iba Pa) ---
-import bagoongImg from '../assets/IBA_PANG/TERMS_BAGOONG.jpg';
+import bagoongImg from '../assets/IBA_PANG/NEW_TERMS_BAGOONG.jpg';
 import bahuraImg from '../assets/IBA_PANG/TERMS_BAHURA.avif';
 import buyodImg from '../assets/IBA_PANG/TERMS_BUYOD.jpg';
 import dinailanImg from '../assets/IBA_PANG/TERMS_DINAILAN.jpg';
@@ -52,7 +52,7 @@ import styroImg from '../assets/termpic/KAGAMITAN_STYROFOAM.jpg';
 import taktakanImg from '../assets/termpic/KAGAMITAN_TAKTAKAN.jpg';
 import tiklisImg from '../assets/termpic/KAGAMITAN_TIKLIS.jpg';
 
-// --- AUDIO IMPORTS (Iba Pa - Confirmed .mp3) ---
+// --- AUDIO IMPORTS (Iba Pa) ---
 import bagoongAudio from '../assets/RECORD/IBA PANG TERMINOLOHIYA/TERMS_BAGOONG.mp3';
 import bahuraAudio from '../assets/RECORD/IBA PANG TERMINOLOHIYA/TERMS_BAHURA.mp3';
 import brokerAudio from '../assets/RECORD/IBA PANG TERMINOLOHIYA/TERMS_BROKER.mp3';
@@ -66,14 +66,14 @@ import pilotoAudio from '../assets/RECORD/IBA PANG TERMINOLOHIYA/TERMS_PILOTO.mp
 import sariwaAudio from '../assets/RECORD/IBA PANG TERMINOLOHIYA/TERMS_SARIWA.mp3';
 import seawallAudio from '../assets/RECORD/IBA PANG TERMINOLOHIYA/TERMS_SEAWALL.mp3';
 
-// --- AUDIO IMPORTS (Sangkap - Confirmed .m4a) ---
+// --- AUDIO IMPORTS (Sangkap) ---
 import alamangAudio from '../assets/RECORD/SANGKAP/ALAMANG - SANGKAP.m4a';
-import asinAudio from '../assets/RECORD/SANGKAP/ASIN-SANGKAP.m4a'; // Fixed: No spaces
+import asinAudio from '../assets/RECORD/SANGKAP/ASIN-SANGKAP.m4a'; 
 import balawAudio from '../assets/RECORD/SANGKAP/BALAW - SANGKAP.m4a';
 import mantikaAudio from '../assets/RECORD/SANGKAP/MANTIKA - SANGKAP.m4a';
 import tibulakaAudio from '../assets/RECORD/SANGKAP/TIBULAKA - SANGKAP.m4a';
 
-// --- AUDIO IMPORTS (Proseso - Confirmed .mp3) ---
+// --- AUDIO IMPORTS (Proseso) ---
 import ariyaA from '../assets/RECORD/PROSESO/PROSESO_ARIYA0.mp3';
 import batonAudio from '../assets/RECORD/PROSESO/PROSESO_BINABATON0.mp3';
 import bulongAudio from '../assets/RECORD/PROSESO/PROSESO_BULONG0.mp3';
@@ -103,8 +103,7 @@ import sakyawAudio from '../assets/RECORD/PROSESO/PROSESO_SAKYAW.mp3';
 import bulakaAudioA from '../assets/RECORD/PROSESO/PROSESO_TINITIBULAKA.mp3';
 import mustraAudioA from '../assets/RECORD/PROSESO/PROSESO_MUSTRA.mp3';
 
-
-// --- AUDIO IMPORTS (Kagamitan - Confirmed .m4a) ---
+// --- AUDIO IMPORTS (Kagamitan) ---
 import bangkaAudio from '../assets/RECORD/KAGAMITAN/BANGKA_KAGAMITAN.m4a';
 import batingalAudio from '../assets/RECORD/KAGAMITAN/BATINGAL_KAGAMITAN.m4a';
 import bayongAudio from '../assets/RECORD/KAGAMITAN/BAYONG_KAGAMITAN.m4a';
@@ -242,13 +241,35 @@ function Terminology() {
 
   return (
     <div style={styles.mainWrapper}>
+      {/* 1. Introductory Section */}
       <section style={{ ...styles.section, backgroundColor: '#3d0101' }}>
         <h1 style={styles.titleLarge}>PROSESO NG PAGBABALAW</h1>
         <p style={styles.descriptionText}>
-          Hindi lamang pangkabuhayang maituturing ang pagbabalaw, isa itong tradisyon sa Barangay Sabang at Sula.
+          Hindi lamang pangkabuhayang maituturing ang pagbabalaw, isa itong tradisyon na naging bahagi ng pang araw-araw na buhay ng mga lokal sa Barangay Sabang at Sula. Tulad ng ibang larangan, ang pagbabalaw ay may sistematikong proseso upang epektibong makagawa ng de-kalidad na produkto na gawa sa balaw.
         </p>
       </section>
 
+      {/* 2. Steps Section (NEW) */}
+      <section style={{ ...styles.section, backgroundColor: '#5c0808' }}>
+        <h2 style={styles.subtitle}>Mga Hakbang sa Proseso ng Pagbabalaw</h2>
+        <ol style={styles.processList}>
+          <li>Paghahanda ng mga kinakailangan sa paghuli ng balaw</li>
+          <li>Pagpunta ng mga lokal na magbabalaw sa dagat</li>
+          <li>Pag - aariya o pagtapon ng lambat sa ilalim ng dagat</li>
+          <li>Pag-ahon ng lambat sa bangka matapos mahuli ang mga balaw</li>
+          <li>Paghuhugas ng mga balaw sa dagat upang maging malinis</li>
+          <li>Pagsasalya ng mga nahuling balaw sa bangka</li>
+          <li>Pagbalik ng mga lokal na magbabalaw sa kanilang tirahan</li>
+          <li>Pagtatakal ng mga balaw gamit ang lata</li>
+          <li>Pagbibilad (Asin muna kung hapon, bilad agad kung umaga)</li>
+          <li>Pagpapalamig matapos ibilad ang mga balaw</li>
+          <li>Pagpipili o paglilinis gamit ang makarina</li>
+          <li>Paglalagay sa sako bilang paghahanda sa bentahan</li>
+          <li>Pagbebenta sa merkado o sa mga komersyante</li>
+        </ol>
+      </section>
+
+      {/* 3. Original Terminology Sections */}
       <section style={{ ...styles.section, backgroundColor: '#7a1111' }}>
         <h1 style={styles.titleLarge}>SALITA O TERMINOLOHIYA</h1>
         <h3 style={styles.categoryLabel}>KAGAMITAN</h3>
@@ -277,6 +298,12 @@ const styles = {
   mainWrapper: { color: 'white', fontFamily: 'Arial, sans-serif', width: '100%', overflowX: 'hidden' },
   section: { padding: 'clamp(40px, 10vw, 80px) 5%', display: 'flex', flexDirection: 'column', alignItems: 'center', boxSizing: 'border-box' },
   titleLarge: { fontSize: 'clamp(1.5rem, 6vw, 2.5rem)', textAlign: 'center', marginBottom: '20px', letterSpacing: '2px', fontWeight: 'bold' },
+  
+  // FIXED: Added missing style definitions for the new sections
+  subtitle: { fontSize: '1.8rem', marginBottom: '20px', textAlign: 'center', fontWeight: 'bold' },
+  descriptionText: { maxWidth: '800px', textAlign: 'center', lineHeight: '1.8', fontSize: '1.1rem', marginBottom: '10px' },
+  processList: { maxWidth: '800px', textAlign: 'left', lineHeight: '2', fontSize: '1.1rem' },
+
   categoryLabel: { backgroundColor: 'white', color: '#3d0101', display: 'inline-block', padding: '8px 25px', borderRadius: '50px', fontWeight: 'bold', marginBottom: '30px' },
   tableContainer: { backgroundColor: 'white', borderRadius: '12px', overflowX: 'auto', width: '100%', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' },
   table: { width: '100%', minWidth: '700px', borderCollapse: 'collapse', color: '#333' },

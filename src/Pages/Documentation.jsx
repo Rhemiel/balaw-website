@@ -14,6 +14,8 @@ import Img11 from '../assets/DOCUMENTATION/DOCUMENTATION_11.png';
 import Img12 from '../assets/DOCUMENTATION/DOCUMENTATION_12.png';
 import Img13 from '../assets/DOCUMENTATION/DOCUMENTATIO_013.png'; 
 import Img14 from '../assets/DOCUMENTATION/INTERVIEW_05.jpg';
+import Img15 from '../assets/DOCUMENTATION/NEW_import.jpg';
+import Img16 from '../assets/DOCUMENTATION/NEW_import2.jpg';
 
 const DocumentationPage = () => {
   const colors = {
@@ -26,7 +28,7 @@ const DocumentationPage = () => {
   };
 
   const documentationImages = [
-    Img1, Img2, Img4, Img5, Img6, Img7, Img8, Img9, Img10, Img11, Img12, Img13, Img14
+    Img1, Img2, Img4, Img5, Img6, Img7, Img8, Img9, Img10, Img11, Img12, Img13, Img14,Img15,Img16
   ];
 
   const websites = [

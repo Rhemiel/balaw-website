@@ -144,7 +144,7 @@ function Footer() {
             <h4 className="column-header">Links</h4>
             <nav className="footer-nav">
               <a href="/">Home</a>
-              <a href="/salita">Salita o Terminolohiya</a>
+              <a href="/Terminology">Salita o Terminolohiya</a>
               <a href="/acknowledgement">Pagkilala</a>
               <a href="/documentation">Dokumentasyon</a>
               <a href="/binote">Mananaliksik</a>

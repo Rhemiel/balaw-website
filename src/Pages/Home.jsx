@@ -11,6 +11,7 @@ import Vinzons from '../assets/vinzonsm.jpg';
 import Sabang from '../assets/sabang.png'
 import Sula from '../assets/sula.png'
 import Proses from '../assets/pagbabalaw.png';
+import last from'../assets/Proces2.png';
 
 const norteImages = [camNorte1, camNorte2, camNorte3];
 
@@ -350,7 +351,7 @@ function Home() {
         <div className="content-row row-5">
           <div className="row-container img-left">
             <div className="row-image-box">
-              <img src={Proses} alt="Proseso" className="row-image" />
+              <img src={last} alt="Proseso" className="row-image" />
             </div>
             <div className="row-text">
               <h2>Balaw sa Sabang at Sula</h2>
