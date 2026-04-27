@@ -60,6 +60,12 @@ const Acknowledgement = () => {
             <p style={styles.profDesc}>
               Taos-pusong pasasalamat ang aming ipinapaabot kay Ryan S. Rodriguez, PhD, ang aming riserts propesor sa pananaliksik na ito. Ang kaniyang gabay at pagbibigay ng mahalagang kaalaman ay naging malaking tulong upang maging maayos ang daloy at direksyon ng aming pag-aaral.
             </p>
+            <p style={styles.profDesc}>
+              Lubos din kaming nagpapasalamat sa kaniyang mga payo, mungkahi, at pagwawasto na nakatulong upang mapabuti ang kalidad ng aming pananaliksik. Sa pamamagitan ng kaniyang karanasan at dedikasyon sa pagtuturo, mas napalalim ang aming pag-unawa sa proseso ng pananaliksik.
+            </p>
+            <p style={styles.profDesc}>
+              Higit sa lahat, kami ay nagpapasalamat sa kaniyang patuloy na suporta at inspirasyon sa amin bilang mga mag-aaral at mananaliksik. Ang kaniyang paggabay ay nagsilbing motibasyon upang matapos namin nang maayos ang pananaliksik na ito. Maraming salamat po sa inyong oras, pagtitiyaga, at malasakit sa aming pagkatuto.
+            </p>
           </div>
         </div>
 
@@ -69,7 +75,10 @@ const Acknowledgement = () => {
             <img src={Rozel} alt="Rozel Genova" style={styles.profImage} />
             <h4 style={styles.profName}>Rozel A. Genova, PhD</h4>
             <p style={styles.profDesc}>
-              Taos-pusong pasasalamat ang aming ipinapaabot kay Rozel A. Genova, PhD, ang aming tagapayo sa pananaliksik. Sa kaniyang paggabay at pagbibigay ng mahahalagang payo, naging mas malinaw at maayos ang direksyon ng aming pag-aaral.
+              Taos-pusong pasasalamat ang aming ipinapaabot kay<strong> Rozel A. Genova, PhD, </strong>ang aming tagapayo sa pananaliksik. Sa kaniyang paggabay at pagbibigay ng mahahalagang payo, naging mas malinaw at maayos ang direksyon ng aming pag-aaral. Ang kaniyang kaalaman at karanasan ay nagsilbing gabay upang mapabuti ang bawat bahagi ng aming pananaliksik. Lubos din kaming nagpapasalamat sa kaniyang pagtitiyaga sa pagwawasto at pagbibigay ng mga mungkahi na nakatulong upang mapalalim ang aming pag-unawa sa paksa. Sa bawat payo at gabay na kaniyang ibinigay, naging mas maayos at makabuluhan ang kabuoang ng aming pag-aaral.
+            </p>
+            <p style={styles.profDesc}>
+              Higit sa lahat, kami ay nagpapasalamat sa kaniyang patuloy na suporta, inspirasyon, at dedikasyon bilang aming tagapayo. Ang kaniyang gabay ay nagbigay sa amin ng motibasyon upang matapos nang maayos ang pananaliksik na ito. Maraming salamat po sa inyong oras, pagsisikap, at malasakit sa aming pagkatuto.
             </p>
           </div>
         </div>
